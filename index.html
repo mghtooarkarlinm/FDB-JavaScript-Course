@@ -32,18 +32,10 @@
         <h1>Functions</h1>
     </main>
     <script>
-        // // arrow function
-        let arrow = (one,two) => console.log(one+two);
-        arrow(2,3)
-
-        // // arrow function compare with function expression
-        let expression = function(one,two){
-            return console.log(one+two)
-        }
-        expression(9,1)
-
-        let arr = _ => console.log("i am function expression");
-        arr();
+        // IIFE function
+        (function(){
+            console.log("i am iife function")
+        })()
     </script>
 </body>
 </html>
