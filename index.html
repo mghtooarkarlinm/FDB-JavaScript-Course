@@ -32,17 +32,15 @@
         <h1>Functions</h1>
     </main>
     <script>
-        
-        // // function statement coding challenge - 1
-        function addition(one,two,three,four){
-            let VarOne = one + two ;
-            let VarTwo = three + four ;
-            let VarThree = VarOne + VarTwo ;
-            return console.log(VarThree);
+        // // Default parameter
+        function parametererror(pramasOne,pramasTwo = 0){
+            let result = pramasOne + pramasTwo;
+            return console.log(result);
         };
 
-        addition(2,3,4,5);
-        addition(10,20,30,40);
+        parametererror(6);
+
+        // NaN === Not a Number //
     </script>
 </body>
 </html>
