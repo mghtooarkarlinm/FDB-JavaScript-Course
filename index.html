@@ -32,15 +32,14 @@
         <h1>Functions</h1>
     </main>
     <script>
-        // // Default parameter
-        function parametererror(pramasOne,pramasTwo = 0){
-            let result = pramasOne + pramasTwo;
-            return console.log(result);
-        };
+        // // Variable Hoisting ( Different detween var(global scope variable) and ler(block scope variable) )
+        {
+            let numberOne = 2;
+            var numberTwo = 4;
+        }
 
-        parametererror(6);
-
-        // NaN === Not a Number //
+        // console.log(numberOne)
+        console.log(numberTwo)
     </script>
 </body>
 </html>
