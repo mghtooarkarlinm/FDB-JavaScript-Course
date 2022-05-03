@@ -32,10 +32,20 @@
         <h1>Functions</h1>
     </main>
     <script>
-        // IIFE function
-        (function(){
-            console.log("i am iife function")
-        })()
+        
+        // // function hoisting // //
+
+        // // function statement can call from every where
+        statement()
+        function statement(){
+            console.log("i am function statement")
+        };
+
+        // // function expression can call after assign
+        let expression = function(){
+            console.log("i am function expression")
+        };
+        expression()
     </script>
 </body>
 </html>
