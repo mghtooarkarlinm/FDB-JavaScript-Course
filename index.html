@@ -32,19 +32,18 @@
         <h1>Functions</h1>
     </main>
     <script>
-        // // callback function (function in parameter)
-        let expression = function(num,fun){
-            let result = fun(num);
-            return console.log(2 * result)
-        };
+        // // arrow function
+        let arrow = (one,two) => console.log(one+two);
+        arrow(2,3)
 
-        expression(2,function(x){
-            return x + 1;
-        });
+        // // arrow function compare with function expression
+        let expression = function(one,two){
+            return console.log(one+two)
+        }
+        expression(9,1)
 
-        expression(6,function(x){
-            return x * 2;
-        });
+        let arr = _ => console.log("i am function expression");
+        arr();
     </script>
 </body>
 </html>
