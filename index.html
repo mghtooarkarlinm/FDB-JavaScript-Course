@@ -32,14 +32,12 @@
         <h1>Functions</h1>
     </main>
     <script>
-        // // Variable Hoisting ( Different detween var(global scope variable) and ler(block scope variable) )
-        {
-            let numberOne = 2;
-            var numberTwo = 4;
-        }
-
-        // console.log(numberOne)
-        console.log(numberTwo)
+        // // function expression
+        let expression = function(one,two = 0){
+            let result = one+two;
+            return result;
+        };
+        expression(2,4);
     </script>
 </body>
 </html>
