@@ -32,12 +32,19 @@
         <h1>Functions</h1>
     </main>
     <script>
-        // // function expression
-        let expression = function(one,two = 0){
-            let result = one+two;
-            return result;
+        // // callback function (function in parameter)
+        let expression = function(num,fun){
+            let result = fun(num);
+            return console.log(2 * result)
         };
-        expression(2,4);
+
+        expression(2,function(x){
+            return x + 1;
+        });
+
+        expression(6,function(x){
+            return x * 2;
+        });
     </script>
 </body>
 </html>
