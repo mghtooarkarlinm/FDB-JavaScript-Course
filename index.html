@@ -33,9 +33,27 @@
         <h1>ARRAY</h1>
     </main>
     <script>
-        let names = [ "arkar" , "zaw zaw" , "kyaw kyaw" , 123 , true , false , "khin khin"];
-        console.log(names);
-        console.log(names[names.length - 1])
+        // // array value change
+        // let names = ["arkar" , "zaw zaw" , "kyaw kyaw" , "khin khin" , "tun tun"];
+        // console.log(names);
+        // names[1] = "maung maung" ;
+        // console.log(names);
+
+        // Nasted Array
+        let names = [ "arkar" ,
+                        "zaw zaw" , 
+                        [
+                           "kyaw kyaw" , "khin khin" , "tun tun",
+                           [
+                               "mg mg"
+                           ]
+                        ] 
+                    ];
+                    console.log(names)
+                    console.log(names[2][0]);
+                    console.log(names[2][3][0])
+
+
     </script>
 </body>
 </html>
