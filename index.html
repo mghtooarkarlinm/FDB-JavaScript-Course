@@ -14,38 +14,28 @@
         }
         main{
             background-color: #000;
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            width: 100%;
         }
         h1{
             font-size: 80px;
-            color: #fff;
         }
     </style>
 </head>
 <body>
     
     <main>
-        <h1>Functions</h1>
+        <h1>ARRAY</h1>
     </main>
     <script>
-        
-        // // function hoisting // //
-
-        // // function statement can call from every where
-        statement()
-        function statement(){
-            console.log("i am function statement")
-        };
-
-        // // function expression can call after assign
-        let expression = function(){
-            console.log("i am function expression")
-        };
-        expression()
+        let names = [ "arkar" , "zaw zaw" , "kyaw kyaw" , 123 , true , false , "khin khin"];
+        console.log(names);
+        console.log(names[names.length - 1])
     </script>
 </body>
 </html>
