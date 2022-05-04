@@ -18,42 +18,35 @@
             height: 100vh;
             width: 100%;
             color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         h1{
-            font-size: 80px;
+            font-size: 60px;
+            padding: 100px 0;
+        }
+        p{
+            font-size: 40px;
         }
     </style>
 </head>
 <body>
     
     <main>
-        <h1>ARRAY</h1>
+        <h1>ARRAY Methods</h1>
+        <p>push,pop,shift,unshift</p>
     </main>
+
     <script>
-        // // array value change
-        // let names = ["arkar" , "zaw zaw" , "kyaw kyaw" , "khin khin" , "tun tun"];
-        // console.log(names);
-        // names[1] = "maung maung" ;
-        // console.log(names);
-
-        // Nasted Array
-        let names = [ "arkar" ,
-                        "zaw zaw" , 
-                        [
-                           "kyaw kyaw" , "khin khin" , "tun tun",
-                           [
-                               "mg mg"
-                           ]
-                        ] 
-                    ];
-                    console.log(names)
-                    console.log(names[2][0]);
-                    console.log(names[2][3][0])
-
-
+        // // array methods (push,pop,shift,unshift)
+        let names = ["arkar" , "zaw zaw" , "kyaw kyaw" , "khin khin" , "tun tun"];
+        console.log(names);
+        names.push("maung maung")
+        console.log(names);
+        names.pop();
+        console.log(names);
+        names.shift()
+        console.log(names);
+        names.unshift("arkar zaw")
+        console.log(names);
     </script>
 </body>
 </html>
