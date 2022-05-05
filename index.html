@@ -32,17 +32,17 @@
     
     <main>
         <h1>ARRAY Methods</h1>
-        <p>indexOf , splice , join</p>
+        <p>map</p>
     </main>
 
     <script>
-        // // array methods (indexOf,splice,join)
+        // // array methods (map)
         let names = [ "arkar" , "zaw zaw" , "kyaw kyaw" , "tun tun" , "maung maung" ];
-        console.log(names);
-        // names.splice(index number,count);
-        names.splice(2,2);
-        console.log(names.join(","))
-        console.log(names.indexOf("kyaw kyaw"));
+        let MapNames = names.map(function(name){
+            return "mr - " + name;
+        });
+        console.log(names)
+        console.log(MapNames)
     </script>
 </body>
 </html>
