@@ -32,21 +32,17 @@
     
     <main>
         <h1>ARRAY Methods</h1>
-        <p>push,pop,shift,unshift</p>
+        <p>indexOf , splice , join</p>
     </main>
 
     <script>
-        // // array methods (push,pop,shift,unshift)
-        let names = ["arkar" , "zaw zaw" , "kyaw kyaw" , "khin khin" , "tun tun"];
+        // // array methods (indexOf,splice,join)
+        let names = [ "arkar" , "zaw zaw" , "kyaw kyaw" , "tun tun" , "maung maung" ];
         console.log(names);
-        names.push("maung maung")
-        console.log(names);
-        names.pop();
-        console.log(names);
-        names.shift()
-        console.log(names);
-        names.unshift("arkar zaw")
-        console.log(names);
+        // names.splice(index number,count);
+        names.splice(2,2);
+        console.log(names.join(","))
+        console.log(names.indexOf("kyaw kyaw"));
     </script>
 </body>
 </html>
