@@ -32,17 +32,17 @@
     
     <main>
         <h1>ARRAY Methods</h1>
-        <p>map</p>
+        <p>filter</p>
     </main>
 
     <script>
-        // // array methods (map)
-        let names = [ "arkar" , "zaw zaw" , "kyaw kyaw" , "tun tun" , "maung maung" ];
-        let MapNames = names.map(function(name){
-            return "mr - " + name;
-        });
-        console.log(names)
-        console.log(MapNames)
+        // // array methods (filter)
+        let numbers = [ 1,2,3,4,5,6,7,8,9,10 ]; // original array
+        let FilterArray = numbers.filter(function(num){
+            return num >= 5;
+        })
+        console.log(numbers)
+        console.log(FilterArray)
     </script>
 </body>
 </html>
