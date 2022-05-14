@@ -26,20 +26,42 @@
         p{
             font-size: 40px;
         }
+        button{
+            margin-top: 20px;
+            padding: 4px 10px;
+            background-color: #000;
+            color: #fff;
+            font-size: 16px;
+            border: 1px solid #fff;
+            outline: none;
+            transition: .6s linear;
+        }
+        button:hover{
+            background-color: #ff0000;
+        }
     </style>
 </head>
 <body>
     
     <main>
-        <h1>ARRAY Methods</h1>
-        <p>reduce</p>
+        <h1 id="header">DOM</h1>
+        <p class="content">Document Object Model</p>
+        <button onclick="ChangeColor()">Click Me</button>
     </main>
 
     <script>
-        // // array methods (reduce) 
-        let numbers = [ 1,2,3,4,5,6,7,8,9,10 ]; // original array
-        let result = numbers.reduce((num1,num2) => num1 + num2)
-        console.log(result)
+        function ChangeColor(){
+            let Header = document.getElementById("header");
+            let Content = document.querySelector(".content");
+
+            if(Header.style.color === "red" && Content.style.color === "green"){
+                Header.style.color = "white";
+                Content.style["color"] = "white";
+            }else{
+                Header.style.color = "red";
+                Content.style["color"] = "green";
+            }
+        }
     </script>
 </body>
 </html>
